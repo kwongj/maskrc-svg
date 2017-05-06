@@ -1,6 +1,8 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # Script by Jason Kwong & Torsten Seemann
 # Script to mask recombination from CFML output and draw SVG of recombinant regions
+
+from __future__ import print_function
 
 # Usage
 import argparse
