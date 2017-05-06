@@ -52,10 +52,10 @@ optional arguments:
 * Specify colour to show extant recombination `--svgcolour COLOUR`
 * Add consensus row of recombination hotspots to SVG `--consensus`
 
-##Bugs
+## Bugs
 Please submit via the GitHub issues page: [https://github.com/kwongj/maskrc-svg/issues](https://github.com/kwongj/maskrc-svg/issues)  
 
-##Software Licence
+## Software Licence
 GPLv3: [https://github.com/kwongj/maskrc-svg/blob/master/LICENSE](https://github.com/kwongj/maskrc-svg/blob/master/LICENSE)
 
 ## Other links
