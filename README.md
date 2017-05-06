@@ -49,7 +49,7 @@ optional arguments:
 * Draw SVG of recombinant regions `--svg FILE`
 * Specify size of SVG in pixels eg. 800x600 `--svgsize WIDTHxHEIGHT`
 * Specify desired order of taxa in SVG `--svgorder FILE`
-* Specify colour to show extant recombination `--svgcolour COLOUR`
+* Specify colour to show extant recombination (ancestral recombination is shown in grey) `--svgcolour COLOUR`
 * Add consensus row of recombination hotspots to SVG `--consensus`
 
 ## Bugs
