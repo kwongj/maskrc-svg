@@ -7,9 +7,9 @@ Jason Kwong (@kwongjc)  ::  [kwongj](https://github.com/kwongj)
 Torsten Seemann (@torstenseemann)  ::  [tseemann](https://github.com/tseemann)  
 
 ## Dependencies
-* [Python 2.x](https://www.python.org/downloads/)
+* [Python 3.x](https://www.python.org/downloads/)
 * [BioPython](http://biopython.org/wiki/Main_Page)
-* [ete2](http://etetoolkit.org/)
+* [ete3](http://etetoolkit.org/)
 * [svgwrite](https://pypi.python.org/pypi/svgwrite/)
 
 ## Usage

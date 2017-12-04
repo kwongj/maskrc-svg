@@ -1,8 +1,6 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # Script by Jason Kwong & Torsten Seemann
 # Script to mask recombination from CFML output and draw SVG of recombinant regions
-
-from __future__ import print_function
 
 # Usage
 import argparse
@@ -23,7 +21,7 @@ parser.add_argument('--svgsize', metavar='WIDExHIGH', default='800x600', help='s
 parser.add_argument('--svgorder', metavar='FILE', help='specify file containing list of taxa (1 per line) in desired order')
 parser.add_argument('--svgcolour', metavar='COLOUR', default='black', help='specify colour of recombination regions in HEX format (default=black)')
 parser.add_argument('--consensus', action='store_true', help='add consensus row of recombination hotspots')
-parser.add_argument('--version', action='version', version='%(prog)s 0.3')
+parser.add_argument('--version', action='version', version='%(prog)s 0.4')
 
 args = parser.parse_args()
 
@@ -156,7 +154,7 @@ SeqIO.write(seqALN, args.out, 'fasta')
 
 # Write recombinant regions to file
 if args.regions:
-	with open(args.regions, 'wb') as csvfile:
+	with open(args.regions, 'w') as csvfile:
 		csvwriter = csv.writer(csvfile, delimiter='\t')
 		for k,v in list(d.items()):
 			for b in v:
