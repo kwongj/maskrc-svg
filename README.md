@@ -10,6 +10,7 @@ Torsten Seemann (@torstenseemann)  ::  [tseemann](https://github.com/tseemann)
 * [Python 3.x](https://www.python.org/downloads/)
 * [BioPython](http://biopython.org/wiki/Main_Page)
 * [ete3](http://etetoolkit.org/)
+* [bcbio-gff](https://github.com/chapmanb/bcbb/tree/master/gff)
 * [svgwrite](https://pypi.python.org/pypi/svgwrite/)
 
 ## Usage
