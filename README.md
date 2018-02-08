@@ -11,6 +11,7 @@ Torsten Seemann (@torstenseemann)  ::  [tseemann](https://github.com/tseemann)
 * [BioPython](http://biopython.org/wiki/Main_Page)
 * [ete2](http://etetoolkit.org/)
 * [svgwrite](https://pypi.python.org/pypi/svgwrite/)
+* [bcbio-gff](https://pypi.python.org/pypi/bcbio-gff/0.6.4)
 
 ## Usage
 `$ maskrc-svg.py -h`  
