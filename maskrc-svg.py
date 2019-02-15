@@ -21,7 +21,7 @@ parser.add_argument('--svgsize', metavar='WIDExHIGH', default='800x600', help='s
 parser.add_argument('--svgorder', metavar='FILE', help='specify file containing list of taxa (1 per line) in desired order')
 parser.add_argument('--svgcolour', metavar='COLOUR', default='black', help='specify colour of recombination regions in HEX format (default=black)')
 parser.add_argument('--consensus', action='store_true', help='add consensus row of recombination hotspots')
-parser.add_argument('--version', action='version', version='%(prog)s 0.4')
+parser.add_argument('--version', action='version', version='%(prog)s 0.5')
 
 args = parser.parse_args()
 
@@ -108,7 +108,8 @@ if args.gubbins:
 				taxa = f.qualifiers['taxa'][0].strip().split()
 				state = ('ancestral', 'extant')[ len(taxa)==1 ]
 				for taxon in taxa:
-					seqLIST.append( [ taxon, [ int(f.location.start), int(f.location.end), state ] ] )
+					# BCBio-GFF module parser seems to extract coordinate-1 for f.location.start
+					seqLIST.append( [ taxon, [ int(f.location.start)+1, int(f.location.end), state ] ] )
 else:
 	msg('Parsing ClonalFrameML file: {}'.format(coordfn))
 	with open(coordfn) as csvfile:
